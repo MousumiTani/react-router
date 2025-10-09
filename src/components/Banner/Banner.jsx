@@ -5,8 +5,8 @@ import playstoreImg from "../../assets/playstore.png";
 
 const Banner = () => {
   return (
-    <div className=" bg-[#D2D2D2] mx-auto">
-      <div className="flex flex-col items-center justify-center text-center p-12">
+    <div className=" bg-[#D2D2D2] mx-auto pt-12">
+      <div className="flex flex-col items-center justify-center text-center px-12 ">
         <h1 className="text-5xl font-bold">
           We Build <br />
           <span className="text-[#9F62F2]">Productive</span> Apps
@@ -44,7 +44,32 @@ const Banner = () => {
     object-cover"
         />
       </div>
-      <div></div>
+
+      <section className="bg-gradient-to-r from-[#9F62F2]/100 via-[#9F62F2]/90 to-[#9F62F2]/100 py-4 lg:py-12 items-center text-center text-white">
+        <h1 className="text-center font-semibold text-4xl mb-8">
+          Trusted by Millions, Built for You
+        </h1>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="stats  w-full">
+            <div className="stat-desc text-lg">Total Downloads</div>
+            <div className="stat-value  font-bold">29.6M</div>
+            <div className="stat-desc text-lg">21% More Than Last Month</div>
+          </div>
+
+          <div className="stats  w-full">
+            <div className="stat-desc text-lg">Total Reviews</div>
+            <div className="stat-value  font-bold">906K</div>
+            <div className="stat-desc text-lg">46% More Than Last Month</div>
+          </div>
+
+          <div className="stats  w-full">
+            <div className="stat-desc text-lg">Active Apps</div>
+            <div className="stat-value  font-bold">132+</div>
+            <div className="stat-desc text-lg">31 More Will Launch</div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

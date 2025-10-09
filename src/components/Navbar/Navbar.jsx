@@ -1,13 +1,21 @@
 import React from "react";
 import logoImage from "../../assets/logo.png";
 import { VscGithub } from "react-icons/vsc";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const links = (
     <>
-      <li className="m-2 text-base font-medium">Home</li>
-      <li className="m-2 text-base font-medium">Apps</li>
-      <li className="m-2 text-base font-medium">Installation</li>
+      <li className="m-2 text-base font-medium">
+        <Link to="/">Home</Link>
+      </li>
+      <li className="m-2 text-base font-medium">
+        <Link to="/apps">Apps</Link>
+      </li>
+
+      <li className="m-2 text-base font-medium">
+        <Link to="/installation">Installation</Link>
+      </li>
     </>
   );
   return (
@@ -40,7 +48,7 @@ const Navbar = () => {
         </div>
         <section className="btn btn-ghost">
           <img src={logoImage} alt="" className="w-8 h-8 " />
-          <a className="text-xl font-bold">HERO.IO</a>
+          <a className="text-xl font-bold">SelfRise</a>
         </section>
       </div>
       <div className="navbar-center hidden lg:flex">
