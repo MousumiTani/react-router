@@ -1,23 +1,46 @@
 import React from "react";
 import logoImage from "../../assets/logo.png";
 import { VscGithub } from "react-icons/vsc";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
+import { useNavigate } from "react-router";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const links = (
     <>
       <li className="m-2 text-base font-medium">
-        <Link to="/">Home</Link>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "border-b-2 border-purple-500 pb-1" : "text-gray-700"
+          }
+        >
+          Home
+        </NavLink>
       </li>
       <li className="m-2 text-base font-medium">
-        <Link to="/apps">Apps</Link>
+        <NavLink
+          to="/apps"
+          className={({ isActive }) =>
+            isActive ? "border-b-2 border-purple-500 pb-1" : "text-gray-700"
+          }
+        >
+          Apps
+        </NavLink>
       </li>
-
       <li className="m-2 text-base font-medium">
-        <Link to="/installation">Installation</Link>
+        <NavLink
+          to="/installation"
+          className={({ isActive }) =>
+            isActive ? "border-b-2 border-purple-500 pb-1" : "text-gray-700"
+          }
+        >
+          Installation
+        </NavLink>
       </li>
     </>
   );
+
   return (
     <div className="navbar max-w-7xl mx-auto  ">
       <div className="navbar-start">
@@ -46,9 +69,9 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <section className="btn btn-ghost">
+        <section className="btn btn-ghost " onClick={() => navigate("/")}>
           <img src={logoImage} alt="" className="w-8 h-8 " />
-          <a className="text-xl font-bold">SelfRise</a>
+          <h3 className="text-xl font-bold">SelfRise</h3>
         </section>
       </div>
       <div className="navbar-center hidden lg:flex">

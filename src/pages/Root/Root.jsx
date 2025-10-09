@@ -1,14 +1,17 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import { Outlet } from "react-router";
+import { Outlet, useNavigation } from "react-router";
+import { Toaster } from "react-hot-toast";
 
 const Root = () => {
+  const navigation = useNavigation();
   return (
     <div>
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      {navigation.state === "loading" ? <Spinner /> : <Outlet />}
       <Footer></Footer>
+      <Toaster position="top-right" />
     </div>
   );
 };

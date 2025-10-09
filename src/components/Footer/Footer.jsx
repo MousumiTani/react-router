@@ -12,7 +12,6 @@ import { useState, useEffect } from "react";
 export default function Footer() {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
-  // Show button after scrolling
   useEffect(() => {
     const handleScroll = () => {
       setShowTopBtn(window.scrollY > 300);
@@ -21,7 +20,6 @@ export default function Footer() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Smooth scroll to top
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -31,7 +29,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
         <div>
           <h2 className="text-2xl font-bold text-white mb-2">SelfRise</h2>
-          <p className="text-sm leading-relaxed">
+          <p className="text-sm ">
             Explore self-improvement apps that help <br /> you rise higher every
             day.
           </p>

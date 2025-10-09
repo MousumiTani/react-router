@@ -16,21 +16,22 @@ const AppData = () => {
 
   return (
     <div className="bg-[#D2D2D2] mx-auto px-4 py-8 text-center ">
-      <h1 className=" font-semibold text-4xl mt-8 mb-4">Trending Apps</h1>
+      <h1 className=" font-bold text-4xl mt-8 mb-4">Trending Apps</h1>
       <h3 className=" mb-6">
         Explore All Trending Apps on the Market developed by us
       </h3>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 cursor-pointer">
         {apps.map((app) => (
           <div
-            key={app.id}
+            key={`trending-${app.id}`}
             className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center hover:shadow-xl transition-shadow"
+            onClick={() => navigate(`/apps/${app.id}`)}
           >
             <img
               src={app.image}
               alt={app.title}
-              className="w-full h-full
+              className="w-full h-60
                mb-4"
             />
             <h3 className="font-semibold text-lg ">{app.title}</h3>

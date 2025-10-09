@@ -1,0 +1,364 @@
+[
+  {
+    "image": "/assets/demo-app-1.webp",
+    "title": "FocusFlow",
+    "companyName": "MindSync Labs",
+    "id": 1,
+    "description": "Pomodoro timer to help you focus.",
+    "size": 22,
+    "reviews": "54K+",
+    "ratingAvg": 5,
+    "downloads": "9M+",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 9400 }
+    ]
+  },
+  {
+    "image": "/assets/demo-app-2.webp",
+    "title": "MorningRise",
+    "companyName": "BrightPath Studio",
+    "id": 2,
+    "description": "Guided morning routines.",
+    "size": 30,
+    "reviews": "37K",
+    "ratingAvg": 5,
+    "downloads": "9M+",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 5400 }
+    ]
+  },
+  {
+    "image": "/assets/demo-app-3.webp",
+    "title": "Serene",
+    "companyName": "CalmEdge",
+    "id": 3,
+    "description": "Self-care companion.",
+    "size": 35,
+    "reviews": "54K+",
+    "ratingAvg": 4.8,
+    "downloads": "9M+",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 10800 }
+    ]
+  },
+  {
+    "image": "/assets/demo-app-4.webp",
+    "title": "HabitPath",
+    "companyName": "GrowMore Digital",
+    "id": 4,
+    "description": "Track daily habits, stay consistent.",
+    "size": 26,
+    "reviews": "40K",
+    "ratingAvg": 4.7,
+    "downloads": "9M+",
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 11300 }
+    ]
+  },
+  {
+    "image": "/assets/demo5.png",
+    "title": "SalahSync",
+    "companyName": "DeenApps",
+    "id": 5,
+    "description": "Accurate 5-time prayer reminders.",
+    "size": 31,
+    "reviews": "100K+",
+    "ratingAvg": 5,
+    "downloads": "9M+",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 43000 }
+    ]
+  },
+  {
+    "image": "/assets/demo-app-6.webp",
+    "title": "Mindset 365",
+    "companyName": "Clarity Co.",
+    "id": 6,
+    "description": "Daily habit tracking for positive mindset.",
+    "size": 21,
+    "reviews": "37K",
+    "ratingAvg": 4.9,
+    "downloads": "9M+",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 5900 }
+    ]
+  },
+  {
+    "image": "/assets/demo7.png",
+    "title": "WordBoost",
+    "companyName": "Learnify Labs",
+    "id": 7,
+    "description": "Expand your English vocabulary.",
+    "size": 18,
+    "reviews": "89K",
+    "ratingAvg": 4.8,
+    "downloads": "9M+",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 8800 }
+    ]
+  },
+
+  {
+    "image": "/assets/demo-app-8.webp",
+    "title": "PodGrow",
+    "companyName": "SkillCast",
+    "id": 20,
+    "description": "Curated podcasts for personal growth.",
+    "size": 22,
+    "reviews": "54K+",
+    "ratingAvg": 5,
+    "downloads": "9M+",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 8400 }
+    ]
+  },
+
+  {
+    "id": 9,
+    "title": "CodeStart",
+    "companyName": "DevLabs",
+    "image": "/assets/demo9.png",
+    "description": "Learn programming from basics to advanced through interactive lessons.",
+    "size": 40,
+    "reviews": "98K",
+    "ratingAvg": 4.7,
+    "downloads": "4M+",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 7600 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "ToDoZen",
+    "companyName": "Focus Labs",
+    "image": "/assets/todo.png",
+    "description": "Organize your day with a simple and effective to-do list app.",
+    "size": 24,
+    "reviews": "89K",
+    "ratingAvg": 4.6,
+    "downloads": "8M+",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 5200 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "MeditateNow",
+    "companyName": "CalmEdge",
+    "image": "/assets/meditate.png",
+    "description": "Guided meditation sessions to reduce stress and increase focus.",
+    "size": 34,
+    "reviews": "37K",
+    "ratingAvg": 4.8,
+    "downloads": "9M+",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 7100 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "HydraTrack",
+    "companyName": "Wellness Co.",
+    "image": "/assets/track.png",
+    "description": "Track your water intake and stay hydrated throughout the day.",
+    "size": 20,
+    "reviews": "40K",
+    "ratingAvg": 4.5,
+    "downloads": "6M+",
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 5480 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "FocusMind",
+    "companyName": "BrainBoost",
+    "image": "/assets/focus.png",
+    "description": "Techniques and timers to improve concentration and productivity.",
+    "size": 27,
+    "reviews": "37K",
+    "ratingAvg": 4.7,
+    "downloads": "7M+",
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 320 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 7300 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "GratiJournal",
+    "companyName": "BrightPath Studio",
+    "image": "/assets/journal.png",
+    "description": "Daily gratitude journal to improve mindset and mental health.",
+    "size": 19,
+    "reviews": "89K",
+    "ratingAvg": 4.6,
+    "downloads": "6M+",
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 5530 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Learnify",
+    "companyName": "SkillUp Inc.",
+    "image": "/assets/learn.png",
+    "description": "Short lessons to learn new skills and improve daily knowledge.",
+    "size": 32,
+    "reviews": "54K+",
+    "ratingAvg": 4.7,
+    "downloads": "5M+",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 8600 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "TimeMaster",
+    "companyName": "Focus Labs",
+    "image": "/assets/time.png",
+    "description": "Manage your schedule, track time and increase efficiency.",
+    "size": 25,
+    "reviews": "98K",
+    "ratingAvg": 4.6,
+    "downloads": "7M+",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 5500 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "ReadCast",
+    "companyName": "MindSync Labs",
+    "image": "/assets/read.png",
+    "description": "Curated podcasts to improve vocabulary and general knowledge.",
+    "size": 28,
+    "reviews": "89K",
+    "ratingAvg": 4.5,
+    "downloads": "5M+",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 5500 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "QuickCode",
+    "companyName": "DevLabs",
+    "image": "/assets/desktop.png",
+    "description": "Practice coding challenges and learn programming fast.",
+    "size": 42,
+    "reviews": "54K+",
+    "ratingAvg": 4.7,
+    "downloads": "4M+",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 7600 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "MindCalm",
+    "companyName": "CalmEdge",
+    "image": "/assets/calm.png",
+    "description": "Meditation, breathing, and relaxation techniques for stress relief.",
+    "size": 33,
+    "reviews": "100K+",
+    "ratingAvg": 4.7,
+    "downloads": "9M+",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 7300 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "DailyPlanner",
+    "companyName": "Focus Labs",
+    "image": "/assets/plan.png",
+    "description": "Plan your day, track habits, and manage your tasks effectively.",
+    "size": 26,
+    "reviews": "98K",
+    "ratingAvg": 4.6,
+    "downloads": "8M+",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 5600 }
+    ]
+  }
+]

@@ -19,9 +19,7 @@ const Banner = () => {
         <section className="flex gap-6 mb-10">
           <button
             className="btn bg-[#D2D2D2] border-gray-400 hover:bg-gray-500"
-            onClick={() =>
-              window.open("https://github.com/MousumiTani?tab=repositories")
-            }
+            onClick={() => window.open("https://www.apple.com/app-store/")}
           >
             <img src={playstoreImg} alt="" className="h-8 w-8" />
             Google Play
@@ -29,7 +27,7 @@ const Banner = () => {
           <button
             className="btn bg-[#D2D2D2] border-gray-400 hover:bg-gray-500"
             onClick={() =>
-              window.open("https://github.com/MousumiTani?tab=repositories")
+              window.open("https://play.google.com/store/games?hl=en")
             }
           >
             {" "}
@@ -46,12 +44,12 @@ const Banner = () => {
       </div>
 
       <section className="bg-gradient-to-r from-[#9F62F2]/100 via-[#9F62F2]/90 to-[#9F62F2]/100 py-4 lg:py-12 items-center text-center text-white">
-        <h1 className="text-center font-semibold text-4xl mb-8">
+        <h1 className="text-center font-bold text-4xl mb-8">
           Trusted by Millions, Built for You
         </h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          <div className="stats  w-full">
+          <div className="stats  w-full ">
             <div className="stat-desc text-lg">Total Downloads</div>
             <div className="stat-value  font-bold">29.6M</div>
             <div className="stat-desc text-lg">21% More Than Last Month</div>
