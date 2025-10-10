@@ -20,7 +20,6 @@ const Installation = () => {
     installedApps.includes(app.id)
   );
 
-  // Uninstall an app
   const handleUninstall = (appId) => {
     const updatedInstalled = installedApps.filter((id) => id !== appId);
     setInstalledApps(updatedInstalled);
@@ -49,7 +48,7 @@ const Installation = () => {
               <img
                 src={app.image}
                 alt={app.image}
-                className="w-32 h-32 object-cover rounded"
+                className="w-16 h-16 object-cover rounded"
               />
               <div className="text-left">
                 <h3 className="font-semibold text-lg">

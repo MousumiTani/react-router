@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import { useLoaderData, useNavigate } from "react-router";
 import downloadIcon from "../../assets/icon-downloads.png";
 
 const Apps = () => {
   const apps = useLoaderData();
   const [search, setSearch] = useState("");
-  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const filteredApps = useMemo(() => {
@@ -13,13 +12,6 @@ const Apps = () => {
       app.title.toLowerCase().includes(search.toLowerCase())
     );
   }, [search, apps]);
-
-  useEffect(() => {
-    if (loading) {
-      const timer = setTimeout(() => setLoading(false), 200); // small delay
-      return () => clearTimeout(timer);
-    }
-  }, [filteredApps, loading]);
 
   return (
     <div className=" bg-[#D2D2D2] mx-auto px-4 py-8 text-center">
@@ -40,7 +32,6 @@ const Apps = () => {
         />
       </div>
 
-      {/* Apps Grid */}
       {filteredApps.length === 0 ? (
         <div className="text-center text-gray-500 mt-12">No App Found</div>
       ) : (

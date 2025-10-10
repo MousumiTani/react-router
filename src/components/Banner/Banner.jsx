@@ -12,7 +12,7 @@ const Banner = () => {
           <span className="text-[#9F62F2]">Productive</span> Apps
         </h1>
         <p className="m-10 text-[#627382]">
-          At HERO.IO, we craft innovative apps designed to make everyday life
+          At SelfRise, we craft innovative apps designed to make everyday life
           simpler, smarter, and more exciting. <br /> Our goal is to turn your
           ideas into digital experiences that truly make an impact.
         </p>

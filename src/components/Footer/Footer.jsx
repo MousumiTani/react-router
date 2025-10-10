@@ -75,7 +75,7 @@ export default function Footer() {
 
       <div className=" flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto mt-6">
         <p className="text-sm">
-          © 2025 SelfRise. Made for People to Grow with Positivity.
+          © 2025 SelfRise. Made for People to Grow with Positive Vibe.
         </p>
 
         <div className="flex space-x-4 mt-3 md:mt-0">

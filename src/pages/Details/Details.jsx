@@ -1,38 +1,20 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import React, { useState } from "react";
+import { useLoaderData } from "react-router";
 import { toast } from "react-hot-toast";
 import downloadIcon from "../../assets/icon-downloads.png";
 import reviewIcon from "../../assets/icon-review.png";
 import ratingIcon from "../../assets/icon-ratings.png";
-import { useNavigate } from "react-router";
+import Chart from "../../components/Chart/Chart";
 
 const Details = () => {
-  const { id } = useParams();
-  const [app, setApp] = useState(null);
-  const [installed, setInstalled] = useState(false);
-  const navigate = useNavigate();
-  useEffect(() => {
-    fetch("/allAppData.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const searchApp = data.find((item) => item.id === parseInt(id));
-        setApp(searchApp);
-
-        // Check if already installed
-        const installedApps =
-          JSON.parse(localStorage.getItem("installedApps")) || [];
-        if (searchApp && installedApps.includes(searchApp.id)) {
-          setInstalled(true);
-        }
-      });
-  }, [id]);
+  const app = useLoaderData();
+  const [installed, setInstalled] = useState(
+    JSON.parse(localStorage.getItem("installedApps") || "[]").includes(app.id)
+  );
 
   const handleInstall = () => {
-    if (!app) return;
-
     setInstalled(true);
     toast.success(`${app.title} installed successfully!`);
-
     const installedApps =
       JSON.parse(localStorage.getItem("installedApps")) || [];
     if (!installedApps.includes(app.id)) {
@@ -41,15 +23,13 @@ const Details = () => {
     }
   };
 
-  if (!app) return navigate("/ErrorPage");
-
   return (
     <div className="bg-[#D2D2D2] mx-auto p-6">
       <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
         <img
           src={app.image}
           alt={app.title}
-          className="w-60 h-60 object-contain rounded-lg shadow-md"
+          className="w-64 h-64 object-contain rounded-lg shadow-md"
         />
         <div>
           <h2 className="text-xl font-semibold ">
@@ -77,7 +57,6 @@ const Details = () => {
 
             <div className="stats  w-full">
               <div className="stat-desc text-lg">
-                {" "}
                 <img src={ratingIcon} alt="" className="h-6 w-6 m-2" />
               </div>
 
@@ -87,7 +66,6 @@ const Details = () => {
 
             <div className="stats  w-full">
               <div className="stat-desc text-lg">
-                {" "}
                 <img src={reviewIcon} alt="" className="h-6 w-6 m-2" />
               </div>
 
@@ -107,8 +85,9 @@ const Details = () => {
           </button>
         </div>
       </div>
+      <Chart data={app.ratings} />
+      <h1 className="text-xl font-bold my-4">Description</h1>
       <p>
-        <h1 className="text-xl font-bold my-4">Description</h1>
         This focus app takes the proven Pomodoro technique and makes it even
         more practical for modern lifestyles. Instead of just setting a timer,
         it builds a complete environment for deep work, minimizing distractions
