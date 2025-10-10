@@ -19,18 +19,17 @@ const Banner = () => {
         <section className="flex gap-6 mb-10">
           <button
             className="btn bg-[#D2D2D2] border-gray-400 hover:bg-gray-500"
-            onClick={() => window.open("https://www.apple.com/app-store/")}
+            onClick={() =>
+              window.open("https://play.google.com/store/games?hl=en")
+            }
           >
             <img src={playstoreImg} alt="" className="h-8 w-8" />
             Google Play
           </button>
           <button
             className="btn bg-[#D2D2D2] border-gray-400 hover:bg-gray-500"
-            onClick={() =>
-              window.open("https://play.google.com/store/games?hl=en")
-            }
+            onClick={() => window.open("https://www.apple.com/app-store/")}
           >
-            {" "}
             <img src={appImg} alt="" className="h-8 w-8" />
             App Store
           </button>
